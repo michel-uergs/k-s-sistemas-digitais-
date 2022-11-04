@@ -1,5 +1,6 @@
 
-module datapath(
+module datapath
+(
     input logic                      clk,
     input logic                      rst_n,
     //come from control
@@ -11,7 +12,7 @@ module datapath(
     input logic                      white_reg_enable,
     input logic               [1:0]  operation,
     //go to control 
-    output decoded_instruction_type  decoded_instruction,
+    output                    [4:0]  decoded_instruction,
     output logic                     zero,
     output logic                     neg,
     output logic                     unsigned_overflow,
@@ -21,6 +22,7 @@ module datapath(
     output logic              [15:0] data_in,
     output logic              [4:0]  addr_ram,
 );
+
 
 
 endmodule : datapath

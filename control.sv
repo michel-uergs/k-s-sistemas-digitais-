@@ -19,6 +19,9 @@ module control(
     output logic halt,
     output logic write_enable
 );
-    
+
+logic [4:0] program_counter;
+
+
 
 endmodule : control
