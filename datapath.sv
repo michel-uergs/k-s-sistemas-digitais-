@@ -18,9 +18,9 @@ module datapath
     output logic                     unsigned_overflow,
     output logic                     signed_overflow,
     //RAM             
-    input  logic              [15:0] data_out,
-    output logic              [15:0] data_in,
-    output logic              [4:0]  addr_ram,
+    input  logic              [15:0] data_in,
+    output logic              [15:0] data_out,
+    output logic              [4:0]  addr_ram
 );
 
 
